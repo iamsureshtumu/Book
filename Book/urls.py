@@ -15,12 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+import ebook
 from ebook import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.introduction,name="introduction"),
     path('coverpage/',views.coverpage,name="coverpage"),
     path('index/',views.index,name="index"),
-    path('page1/',views.page1,name="story"),
-    path('app/',include('ebook.urls')),
+    path('page/',views.page,name="story"),
+    path('ebook/',include('ebook.urls')),
+    path('page1/',views.page1,name="page1"),
+    path('page2/',views.page2,name='page2'),
 ]
