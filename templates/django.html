@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>django</title>
+    
+</head>
+<body><center>
+    <h1>welcome to django</h1>
+    <a href="https://en.wikipedia.org/wiki/Django_(web_framework)">about Django</a>
+    </center>
+
+    <p>select language below: </p>
+    <a href="{% url 'python' %}">Python Syllabus</a>
+    </br>
+    <a href="{% url 'py_app:html' %}">Html Syllabus</a>
+    </br>
+    <a href="{% url 'py_app:css' %}">Css Syllabus</a>
+    </br>
+    <a href="{% url 'py_app:js' %}">Java Script Syllabus</a>
+    </br>
+    <a href="{% url 'sql' %}">SQL Syllabus</a> 
+
+
+</body>
+</html>

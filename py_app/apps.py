@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class EbookConfig(AppConfig):
-    name = 'ebook'
+    name = 'py_app'

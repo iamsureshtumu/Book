@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-import ebook
-from ebook import views
+import py_app
+from py_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.introduction,name="introduction"),
-    path('coverpage/',views.coverpage,name="coverpage"),
+    path('',views.pyspiders,name="pyspiders"),
+    path('title/',views.title,name="title"),
     path('index/',views.index,name="index"),
-    path('page/',views.page,name="story"),
-    path('ebook/',include('ebook.urls')),
-    path('page1/',views.page1,name="page1"),
-    path('page2/',views.page2,name='page2'),
+    path('python/',views.python,name="python"),
+    path('django/',views.django,name="django"),
+    path('webtech/',include('py_app.urls')),
+    path('sql',views.sql,name="sql"),
 ]
